@@ -1,4 +1,4 @@
-# BaseCadastroUsuarioPostgreSQL
+# BaseCadastroUsuarioPostgreAPI
 
 ## Descrição do Projeto
 
