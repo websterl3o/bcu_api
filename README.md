@@ -4,19 +4,13 @@
 
 Contexto: desenvolvido como desafio técnico de processo seletivo.
 
-## Funcionalidades:
-- Crie uma página de registro de usuário com os seguintes campos:
-   - Nome (obrigatório, mínimo de 3 caracteres, máximo de 50 caracteres).
-   - E-mail (obrigatório, deve ser um e-mail válido).
-   - Senha (obrigatória, mínimo de 6 caracteres, máximo de 20 caracteres).
-   - Confirmação de Senha (obrigatória e deve coincidir com a senha).
- - Crie uma API RESTful em Laravel para processar o registro de usuários.
-   - Valide os dados recebidos da solicitação, incluindo a confirmação de senha.
-   - Armazene os usuários registrados no banco de dados PostgreSQL.
-   - Retorne uma resposta apropriada para o front-end (por exemplo, sucesso ou erro) no formato JSON.
- - Crie testes unitários para a API RESTful.
-   - Escreva pelo menos um teste unitário para a API Laravel para garantir que os dados sejam validados corretamente e armazenados no banco de dados PostgreSQL.
-   - Utilize a ferramenta de teste do Laravel para isso.
+## Funcionalidades
+
+- **Cadastro de usuários** com validação de nome (3 a 50 caracteres), e-mail válido, senha (6 a 20 caracteres) e confirmação de senha.
+- **API RESTful** para registro, login, consulta do usuário logado e logout, com respostas em JSON.
+- **Persistência** em PostgreSQL.
+- **Testes automatizados** garantindo que os dados sejam validados e gravados corretamente.
+- **Ambiente** 100% em contêineres com Docker Compose.
 
 ## Tecnologias e Ferramentas Utilizadas
 
