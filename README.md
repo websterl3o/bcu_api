@@ -1,10 +1,10 @@
-# BaseCadastroUsuarioPostgreAPI
+# BCU API: cadastro e autenticação de usuários
 
 ## Descrição do Projeto
 
-Projeto BaseCadastroUsuarioPostgreSQL é uma aplicação web que permite o cadastro de usuários e login de usuários. O projeto foi desenvolvido utilizando o framework Laravel e banco de dados PostgreSQL. O projeto foi desenvolvido para atender o desafio proposto pela empresa [First decision](https://www.firstdecision.com.br/).
+Contexto: desenvolvido como desafio técnico de processo seletivo.
 
-## Regras:
+## Funcionalidades:
 - Crie uma página de registro de usuário com os seguintes campos:
    - Nome (obrigatório, mínimo de 3 caracteres, máximo de 50 caracteres).
    - E-mail (obrigatório, deve ser um e-mail válido).
@@ -14,7 +14,7 @@ Projeto BaseCadastroUsuarioPostgreSQL é uma aplicação web que permite o cadas
    - Valide os dados recebidos da solicitação, incluindo a confirmação de senha.
    - Armazene os usuários registrados no banco de dados PostgreSQL.
    - Retorne uma resposta apropriada para o front-end (por exemplo, sucesso ou erro) no formato JSON.
- - Crie testes unitarios para a API RESTful.
+ - Crie testes unitários para a API RESTful.
    - Escreva pelo menos um teste unitário para a API Laravel para garantir que os dados sejam validados corretamente e armazenados no banco de dados PostgreSQL.
    - Utilize a ferramenta de teste do Laravel para isso.
 
@@ -36,7 +36,7 @@ git clone git@github.com:websterl3o/bcu_api.git
 ```
 2. Crie o arquivo .env a partir do .env.example
 ```shellScript
-cp .env.example .env
+cp src/.env.example src/.env
 ```
 3. Execute o comando para subir o ambiente
 ```shellScript
@@ -54,15 +54,15 @@ docker-compose exec app php artisan key:generate
 ```shellScript
 docker-compose exec app php artisan migrate
 ```
-7. Instalar dependencias do node
+7. Instale as dependências do node
 ```shellScript
 docker-compose exec app npm install
 ```
-10. Execute o comando para subir o servidor de desenvolvimento
+8. Execute o comando para subir o servidor de desenvolvimento
 ```shellScript
 docker-compose exec app npm run dev
 ```
-11. Acesse o projeto em http://localhost:9898
+9. Acesse o projeto em http://localhost:9898
 
 ### Rotas da Aplicação
 
@@ -78,6 +78,6 @@ docker-compose exec app npm run dev
 | Método | URI                                | Descrição                            | Body                                                                                                         |
 | ------ | ---------------------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
 | POST   | http://localhost:9898/api/register | Registra um novo usuário.            | ``` { "name": "Leo", "email": "leo@gmail.com", "password": "dasdas", "password_confirmation": "dasdas" } ``` |
-| POST   | http://localhost:9898/api/login    | Login em um usuário.                 | ``` { "email": "leo@gmail.com", "password": "dasdaas" } ```                                                  |
+| POST   | http://localhost:9898/api/login    | Login em um usuário.                 | ``` { "email": "leo@gmail.com", "password": "dasdas" } ```                                                   |
 | GET    | http://localhost:9898/api/me       | Busca informações do usuário logado. |                                                                                                              |
 | POST   | http://localhost:9898/api/logout   | Remove sessão de usuário logado.     |                                                                                                              |
