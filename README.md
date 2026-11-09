@@ -32,9 +32,9 @@ Projeto BaseCadastroUsuarioPostgreSQL é uma aplicação web que permite o cadas
 ## Configuração do Ambiente Docker
 1. Clone o repositório do projeto
 ```shellScript
-git clone git@github.com:websterl3o/BaseCadastroUsuarioPostgreSQL.git
+git clone git@github.com:websterl3o/bcu_api.git
 ```
-2. Crie o arquivo .env apartir do .env.example
+2. Crie o arquivo .env a partir do .env.example
 ```shellScript
 cp .env.example .env
 ```
